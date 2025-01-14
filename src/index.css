@@ -1,6 +1,7 @@
 :root {
   --theme-color-1: #004370;
   --theme-color-2: #0043704b;
+  --theme-color-3: #9b9b9b;
 }
 
 * {
@@ -31,6 +32,10 @@ code {
   background-color: var(--theme-color-1);
 }
 
+.theme-btn-2 {
+  background-color: var(--theme-color-3);
+}
+
 .theme-btn-1:hover {
   background-color: var(--theme-color-1);
   opacity: 0.9;
@@ -39,6 +44,7 @@ code {
 .theme-list-1 {
   padding-bottom: 15px;
   position: relative;
+  cursor: pointer;
 }
 
 .theme-list-1::after {

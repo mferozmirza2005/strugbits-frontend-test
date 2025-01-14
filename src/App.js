@@ -127,7 +127,7 @@ function App() {
             ))}
           </ul>
           <Button
-            className="theme-btn-1"
+            className={`${SelectedItems.length > 0 ? "theme-btn-1" : "theme-btn-2"} mb-4 px-4 py-3`}
             onClick={() =>
               SelectedItems.length > 0 && setSaveModelActive(!SaveModelActive)
             }
@@ -182,9 +182,10 @@ function App() {
                 <span
                   className="position-absolute text-danger p-1"
                   style={{
-                    top: "30px",
-                    left: "10%",
                     backgroundColor: "#ffe0e0",
+                    cursor: "pointer",
+                    left: "10%",
+                    top: "30px",
                   }}
                   onClick={()=>DeleteItem(recipe.id)}
                 >
